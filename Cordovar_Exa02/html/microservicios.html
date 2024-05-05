@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Microservicios</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+
+<div class="container-fluid p-5">
+  <div>
+    <h1>
+      Microservicios
+    </h1>
+    <p>
+      son un estilo de arquitectura de software donde una aplicación se divide en servicios pequeños, autónomos y enfocados en funcionalidades específicas. Estos servicios se comunican entre sí a través de interfaces bien definidas, como HTTP, REST o mensajería asíncrona. La idea principal es que cada microservicio pueda ser desarrollado, desplegado y escalado de forma independiente.
+    </p>
+  </div>
+</div>
+
+<div class="container-fluid p-5 bg-secondary text-white">
+  <h3>
+    Ventajas de los Microservicios
+  </h3>
+  <ul>
+    <li>
+      <b>Flexibilidad</b>: Permiten realizar cambios en partes específicas de la aplicación sin afectar al resto.
+    </li>
+    <li>
+      <b>Escalabilidad</b>: Se pueden escalar de manera horizontal, aumentando el número de instancias de un microservicio para manejar mayores cargas.
+    </li>
+    <li>
+      <b>Despliegue Independiente</b>: Cada microservicio puede ser implementado y actualizado por separado.
+    </li>
+    <li>
+      <b>Resiliencia</b>: Un fallo en un microservicio no necesariamente afecta a toda la aplicación.
+    </li>
+  </ul>
+</div>
+
+<div class="container-fluid p-5 text-white" style="background-color: #0F256E;">
+  <h3>
+    Mejores Practicas para Microservicios
+  </h3>
+  <ul>
+    <li>
+      <b>Automatización y DevOps</b>: Utilizar prácticas de DevOps para automatizar el despliegue y mantenimiento.
+    </li>
+    <li>
+      <b>Observabilidad y Monitoreo</b>: Implementar herramientas de monitoreo para rastrear el rendimiento y detectar problemas.
+    </li>
+    <li>
+      <b>Pruebas Automatizadas</b>: Realizar pruebas automatizadas para garantizar la calidad de los microservicios.
+    </li>
+    <li>
+      <b>Escalabilidad Horizontal</b>: Planificar la arquitectura para escalar horizontalmente según las necesidades.
+    </li>
+    <li>
+      <b>Versionamiento de APIs y Compatibilidad</b>: Asegurar que los cambios en un microservicio no afecten negativamente a otros.
+    </li>
+  </ul>
+</div>
+
+<div class="container-fluid p-5" style="text-align: center;">
+  <h3>Tecnologias y Herramientas de Microservicios</h3>
+  <div class="container mt-3">
+    <p>Da clic en un boton para ver mas informacion</p>
+    <div class="btn-group-vertical d-grid gap-3">
+      <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#Contenedorizacion" style="background-color: #0F256E;">Contenedorización y Orquestación</button>
+      <div id="Contenedorizacion" class="collapse">
+        <ul>
+          <li>
+            <b> Docker</b>: Docker es la herramienta de contenedorización más conocida y ampliamente utilizada. Permite empaquetar aplicaciones y sus dependencias en contenedores, lo que facilita el despliegue y la portabilidad.
+          </li>
+          <li>
+            <b> Kubernetes</b>: Kubernetes es un sistema de orquestación para contenedores. Proporciona funciones avanzadas como autoescalado, gestión de despliegues, equilibrio de carga y recuperación automática de fallos.
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#Frameworks" style="background-color: #0F256E;">Frameworks para Desarrollo de Microservicios</button>
+      <div id="Frameworks" class="collapse">
+        <ul>
+          <li>
+            <b> Spring Boot</b>: Un framework de Java que facilita la creación de aplicaciones basadas en microservicios. Ofrece una amplia gama de funcionalidades, como inyección de dependencias, configuración simplificada y despliegues rápidos.
+          </li>
+          <li>
+            <b> Node.js y Express.js</b>: Node.js es un entorno de ejecución para JavaScript del lado del servidor, y Express.js es un framework ligero para construir aplicaciones web y microservicios en Node.js.
+          </li>
+          <li>
+            <b> Flask y FastAPI</b>: Para microservicios basados en Python. Flask es un framework minimalista, mientras que FastAPI es conocido por su rendimiento y simplicidad para crear APIs REST.
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#Comunicacion" style="background-color: #0F256E;">Comunicación y Mensajería</button>
+      <div id="Comunicacion" class="collapse">
+        <ul>
+          <li>
+            <b> Apache Kafka</b>: Una plataforma de transmisión de eventos y mensajería altamente escalable. Es ideal para construir sistemas basados en eventos y para integrar múltiples microservicios.
+          </li>
+          <li>
+            <b> RabbitMQ</b>: Un sistema de mensajería basado en colas, útil para comunicación asíncrona entre microservicios.
+          </li>
+          <li>
+            <b> gRPC</b>: Un framework de comunicación remota que utiliza HTTP/2 y Protocol Buffers para mejorar el rendimiento y la eficiencia en las comunicaciones entre microservicios.
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#Observabilidad" style="background-color: #0F256E;">Observabilidad y Monitoreo</button>
+      <div id="Observabilidad" class="collapse">
+        <ul>
+          <li>
+            <b> Prometheus</b>: Una herramienta de monitoreo y recopilación de métricas diseñada para entornos de microservicios. Ofrece funciones avanzadas para la recolección de métricas y alertas.
+          </li>
+          <li>
+            <b> Grafana</b>: Un sistema de visualización que se puede integrar con Prometheus y otras fuentes de datos para crear paneles personalizados y gráficos detallados.
+          </li>
+          <li>
+            <b> Jaeger y Zipkin</b>: Herramientas para trazado distribuido, útiles para identificar y diagnosticar problemas de rendimiento en arquitecturas de microservicios.
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#Mallas" style="background-color: #0F256E;">Mallas de Servicios y Gestión de Tráfico</button>
+      <div id="Mallas" class="collapse">
+        <ul>
+          <li>
+            <b> Istio</b>: Un marco de malla de servicios que permite gestionar el tráfico entre microservicios, ofreciendo funciones como equilibrio de carga, autenticación, autorización y control de tráfico.
+          </li>
+          <li>
+            <b> Linkerd</b>: Otro marco de malla de servicios, diseñado para ser ligero y fácil de usar. Proporciona funcionalidades para enrutamiento de tráfico, seguimiento y monitoreo.
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#Seguridad" style="background-color: #0F256E;">Seguridad</button>
+      <div id="Seguridad" class="collapse">
+        <ul>
+          <li>
+            <b> OAuth 2.0 y OpenID Connect</b>: Protocolos de autenticación y autorización ampliamente utilizados para asegurar la comunicación entre microservicios y gestionar el acceso de los usuarios.
+          </li>
+          <li>
+            <b> JWT (JSON Web Tokens)</b>: Un estándar para la creación de tokens de acceso seguros, utilizado para autenticación y autorización entre microservicios.
+          </li>
+          <li>
+            <b> HashiCorp Vault</b>: Una herramienta para gestionar secretos y credenciales, permitiendo una configuración segura y centralizada para microservicios.
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#Gestion" style="background-color: #0F256E;">Herramientas para Gestión de Configuración</button>
+      <div id="Gestion" class="collapse">
+        <ul>
+          <li>
+            <b> Consul</b>: Un sistema para descubrimiento de servicios y gestión de configuraciones. Permite a los microservicios descubrirse entre sí y compartir configuraciones de forma segura.
+          </li>
+          <li>
+            <b> Spring Cloud Config</b>: Un sistema de gestión de configuración para aplicaciones basadas en Spring Boot. Permite la configuración centralizada de microservicios.
+          </li>
+        </ul>
+      </div>
+      <img src="../img/microserviciosEjm.png" width="100%">
+    </div>
+  </div>
+</div>
+
+<div class="fixed-top">
+  <div>
+      <a class="btn btn-secondary" href="Home.html" >Return</a>
+  </div>
+</div>
+    
+<footer style="background-color:#23272A; color: white; text-align: center;">
+    Examen Parcial 2 por Rodolfo Eduardo Cordova Perez
+</footer>
+</body>
+</html>
+    
